@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D03E825-C168-4650-A56A-06B4B9CEEDE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>İndürüm</RootNamespace>
+    <AssemblyName>İndürüm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dürümler.cs" />
+    <Compile Include="FormAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaEkran.Designer.cs">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDurumler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDurumler.Designer.cs">
+      <DependentUpon>FormDurumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIcecekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIcecekler.Designer.cs">
+      <DependentUpon>FormIcecekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYanUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYanUrunler.Designer.cs">
+      <DependentUpon>FormYanUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTatlilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTatlilar.Designer.cs">
+      <DependentUpon>FormTatlilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSiparisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSiparisim.Designer.cs">
+      <DependentUpon>FormSiparisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tatlılar.cs" />
+    <Compile Include="YanÜrünler.cs" />
+    <Compile Include="İçecekler.cs" />
+    <EmbeddedResource Include="FormAnaEkran.resx">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDurumler.resx">
+      <DependentUpon>FormDurumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIcecekler.resx">
+      <DependentUpon>FormIcecekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYanUrunler.resx">
+      <DependentUpon>FormYanUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTatlilar.resx">
+      <DependentUpon>FormTatlilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSiparisim.resx">
+      <DependentUpon>FormSiparisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İNDÜRÜM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dürümler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HataySosluTavukDürüm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TavukDürüm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EtDürüm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZurnaTavukDürüm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZurnaEtDürüm.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlutensizDürüm.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VeganDürüm.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayran.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Şalgam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DenizliGazozu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayrann.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PatatesKızartması.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇıtırTavukTopları.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RusSalatası.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoğanHalkası.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇikolatalıBrownie.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KıbrısTatlısı.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İrmikHelvası.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profiterol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İNDÜRÜM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sepet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dürüm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOYENİ1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
